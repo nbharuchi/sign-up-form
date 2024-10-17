@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 1px solid red;
+    width: 80%;
+    margin-left: 10%;
+    height: 800px;
+    display: flex;
+
+
+}
+
+body div {}
+
+.image {
+    width: 30%;
+    height: 100%;
+
+}
+
+.section2 {
+    width: 80%;
+    height: 100%;
+    border: 1px solid blue;
+}
+
+.header {
+    height: 40%;
+    border: 1px solid pink;
+}
+
+.form {
+    height: 30%;
+    border: 1px solid green;
+}
+
+.footer {
+    height: 30%;
+    border: 1px solid yellow;
+}
