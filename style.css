@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Norse;
+    src: url(../sign-up-form/Norse-Bold.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,6 @@
 }
 
 body {
-    border: 1px solid red;
     width: 80%;
     margin-left: 10%;
     height: 800px;
@@ -14,31 +18,144 @@ body {
 
 }
 
-body div {}
+
 
 .image {
-    width: 30%;
+    width: 40%;
     height: 100%;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-image {
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    top: 8rem;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {}
+
+.logo img {
+
+    height: 50%;
+    width: 50%;
+    position: relative;
+    left: 45px;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    font-family: Norse, sans-serif;
+    font-size: 60px;
+    position: relative;
+    right: 55px;
 
 }
 
 .section2 {
     width: 80%;
     height: 100%;
-    border: 1px solid blue;
 }
 
 .header {
-    height: 40%;
-    border: 1px solid pink;
+    height: 30%;
+    border: 1px solid ghostwhite;
+    background-color: ghostwhite;
+}
+
+.paragraph {
+    margin: 70px 200px 0 40px;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 20px 220px 0 40px;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .form {
-    height: 30%;
-    border: 1px solid green;
+    height: 32%;
+    box-shadow: 5px 5px 5px rgba(1, 1, 17, 0.2);
+
+}
+
+.form p {
+    margin: 20px 220px 0 40px;
+}
+
+.type {
+    display: flex;
+    gap: 40px;
+    margin: 20px 40px 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: grey;
+}
+
+.sect1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.sect2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .footer {
     height: 30%;
-    border: 1px solid yellow;
+
+
+}
+
+input {
+    height: 30px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 5px 5px 5px rgba(1, 1, 17, 0.2);
+}
+
+input[type="password"]:invalid,
+input[type="email"]:invalid,
+input[type="text"]:invalid,
+input[type="tel"]:invalid {
+    border: 1px solid red;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 20px 0 0 40px;
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    font-size: large;
+
 }
